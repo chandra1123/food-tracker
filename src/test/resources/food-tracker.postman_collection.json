@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "3315c2c7-8c6a-42e7-9702-0436a1b78a89",
+		"name": "food-tracker",
+		"description": "Sample application to track calories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "gets the list of users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Get User by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Food Log",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/foodlog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"foodlog"
+					]
+				},
+				"description": "Get the food log"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Food Log By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/foodlog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"foodlog"
+					]
+				},
+				"description": "Get the food log by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\"firstName\": \"Jane\",\r\n        \"lastName\": \"DOE\",\r\n        \"weight\": 200.0,\r\n        \"height\": 5.5,\r\n        \"age\": 40,\r\n        \"dailyCaloriesLimit\": 1600}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/userprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userprofile"
+					]
+				},
+				"description": "Register User"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Food Log",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\"firstName\": \"Jane\",\r\n        \"lastName\": \"DOE\",\r\n        \"weight\": 200.0,\r\n        \"height\": 5.5,\r\n        \"age\": 40,\r\n        \"dailyCaloriesLimit\": 1600}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/userprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userprofile"
+					]
+				},
+				"description": "Create Food Log"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Food Log ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\"firstName\": \"Jane\",\r\n        \"lastName\": \"DOE\",\r\n        \"weight\": 200.0,\r\n        \"height\": 5.5,\r\n        \"age\": 40,\r\n        \"dailyCaloriesLimit\": 1600}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/userprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userprofile"
+					]
+				},
+				"description": "Update Food Log"
+			},
+			"response": []
+		},
+		{
+			"name": "GetCalorie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/calories?foodQuery=for breakfast i ate 3 eggs, bacon and cheese",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calories"
+					],
+					"query": [
+						{
+							"key": "foodQuery",
+							"value": "for breakfast i ate 3 eggs, bacon and cheese"
+						}
+					]
+				},
+				"description": "Get Calorie for Food"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Login Request"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Logout Request"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Food Log entry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
